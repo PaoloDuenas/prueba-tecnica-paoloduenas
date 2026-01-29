@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --hover-border: #3498db;
+    --text-font: 'Roboto', sans-serif;
+    --title-font: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--text-font);
+    padding-top: 56px;
+    background-color: white;
+}
+
+section,
+header {
+    scroll-margin-top: 70px;
+}
+
+.section-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*hero*/
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://i.postimg.cc/MZdYffF3/stock.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-wrap: balance;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+}
+
+/*cards*/
+.project-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    border-color: var(--hover-border);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*btn*/
+.btn-custom {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+/*icons*/
+.fa-brands,
+.fa-solid {
+    transition: transform 0.3s;
+}
+
+.col-md-4:hover i {
+    transform: scale(1.2);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+    opacity: 1;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
